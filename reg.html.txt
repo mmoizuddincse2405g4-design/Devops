@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Registration Form</title>
+    <title>Employee Registration Form</title>
 </head>
 
 <body style="background-color:#d6f0ff; font-family:Arial, sans-serif;">
@@ -19,6 +19,7 @@
     <input type="text" id="email" placeholder="Email" style="width:90%; padding:10px; border:1px solid gray; border-radius:5px; font-size:15px;"><br><br>
 
     <input type="text" id="phone" placeholder="Phone Number" style="width:90%; padding:10px; border:1px solid gray; border-radius:5px; font-size:15px;"><br><br>
+    <input type="text" id=" alternate phone" placeholder="Phone Number" style="width:90%; padding:10px; border:1px solid gray; border-radius:5px; font-size:15px;"><br><br>
 
     <button onclick="register()" style="width:95%; padding:10px; background:#007BFF; color:white; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
         Submit
@@ -39,7 +40,7 @@ function register()
     var roll = document.getElementById("roll").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
-
+    var alternate phone=document.getElementById("alternte phone").value;
     // First Name Validation
     if(!/^[A-Za-z]+$/.test(fname))
     {
